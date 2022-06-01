@@ -1,6 +1,6 @@
 # Exercice - 1
 ## Premier thème et plugin  Wordpress
-### Contient 5 commits
+### Contient 3 commits
 
 > Le thème conient 5 fichiers:
 index.php
