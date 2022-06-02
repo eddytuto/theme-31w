@@ -1,5 +1,5 @@
 /*! 
-Theme Name: 31W-exercice-1 
+Theme Name: 31W-cours-1 
 Author: Eddy Martin
 Author URI: http://github.com/eddytuto
 Description: Thème de base pour le cours de 31W
@@ -14,6 +14,11 @@ Text Domain: 31-w
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
+# variable
+	- couleur
+	- police
+	- dimension
+
 # Generic
 	- Normalize
 	- Box sizing
@@ -22,8 +27,8 @@ Text Domain: 31-w
 	- Elements
 	- Links
 	- Forms
-## Layouts
-# Composents
+## Layout
+# Composent
 	- Navigation
 	- Posts and pages
 	- Widgets
@@ -37,8 +42,12 @@ Text Domain: 31-w
 
 --------------------------------------------------------------*/
 
-// Import variables and mixins.
-@import "abstracts/abstracts";
+/* variable
+--------------------------------------------- */
+@import "variable/typography";
+@import "variable/dimension";
+@import "variable/colors";
+
 
 /*--------------------------------------------------------------
 # Generic
