@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*! 
-Theme Name: 31W-cours 
+Theme Name: 31W-prof
 Author: Eddy Martin
 Author URI: http://github.com/eddytuto
 Description: Thème de base pour le cours de 31W
@@ -14,11 +14,6 @@ Text Domain: 31-w
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# variable
-	- couleur
-	- police
-	- dimension
-
 # Generic
 	- Normalize
 	- Box sizing
@@ -27,8 +22,8 @@ Text Domain: 31-w
 	- Elements
 	- Links
 	- Forms
-## Layout
-# Composent
+## Layouts
+# Composents
 	- Navigation
 	- Posts and pages
 	- Widgets
@@ -41,8 +36,12 @@ Text Domain: 31-w
 	- Alignments
 
 --------------------------------------------------------------*/
-/* variable
---------------------------------------------- */
+/**
+* Police de caractères
+*/
+/* couleur titre */
+/* couleur lien */
+/* couleur bouton */
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -377,22 +376,63 @@ html {
 /* Elements
 --------------------------------------------- */
 body {
-  background: #fff;
+  background: #fefefe;
 }
 
 /**
 *  styles pour h1,h2,h3,h4,h5mh6 et p
 */
 h1, h2 {
-  color: #666666;
+  color: #ec8989;
 }
 
-h2, h3, h4, h5, h6, p {
-  color: #1a1a1a;
+h2, h3, h4, h5, h6 {
+  color: #be1e1e;
 }
 
+p {
+  color: #3c3c3c;
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3, h4, h5, h6, p {
+  font-family: "Roboto Slab", serif;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* font-size */
 h1 {
-  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-size: clamp(2.5rem, 5vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 2vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1.5rem, 2vw, 2.4rem);
+}
+
+h6 {
+  font-size: clamp(1.5rem, 2vw, 2.3rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 2vw, 1.8rem);
 }
 
 hr {
@@ -453,15 +493,15 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-  color: #4169e1;
+  color: #5276e4;
 }
 
 a:visited {
-  color: #800080;
+  color: #182458;
 }
 
 a:hover, a:focus, a:active {
-  color: #191970;
+  color: #1d62a3;
 }
 
 a:focus {
