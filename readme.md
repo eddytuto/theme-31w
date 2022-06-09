@@ -2,7 +2,7 @@
 ## Premier thème et plugin  Wordpress
 ### Contient 3 commits
 
-[github-page](https://eddytuto.github.io/theme-31w)
+[github-page](https://eddytuto.github.io/theme-31w/exer1)
 > Le thème conient 5 fichiers:
 index.php
 style.css
