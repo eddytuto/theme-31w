@@ -29,5 +29,8 @@
             Menu
             </nav>
         </header>
+        <section class="site__sidebar">
+            <h3>Sidebar</h3>
+        </section>
     
 

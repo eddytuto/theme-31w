@@ -385,14 +385,40 @@ body {
 */
 h1, h2 {
   color: #666666;
+  font-family: "Montserrat", sans-serif;
 }
 
-h2, h3, h4, h5, h6, p {
+h3, h4, h5, h6, p {
   color: #1a1a1a;
+  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 h1 {
-  font-size: clamp(1.5rem, 5vw, 5rem);
+  font-size: clamp(2rem, 5vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+
+h4 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+p {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 hr {
@@ -557,4 +583,45 @@ select {
 textarea {
   width: 100%;
 }
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+/*
+Guide efficace sur l'utilisation de grid
+https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+.site {
+  display: grid;
+  grid-template-columns: 20vw auto;
+  grid-template-areas: "header header" "sidebar main" "footer footer";
+}
+
+.site__header, .site__sidebar, .site__main, .site__footer {
+  padding: 1vh 3vw;
+}
+
+.site__header {
+  grid-area: header;
+  background-color: #7bcbdf;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden;
+  /* Resolves issue with <pre> elements forcing full width. */
+  background-color: #a4dbe9;
+}
+
+.site__sidebar {
+  grid-area: sidebar;
+  background-color: #cdebf3;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #7bcbdf;
+}
+
+/* @import "no-sidebar"; */
 /*# sourceMappingURL=style.css.map */
