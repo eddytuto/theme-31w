@@ -5,12 +5,17 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
 
 .site {
+
+
 	display: grid;
-	grid-template-columns: ($size__site-sidebar) auto;
+	grid-template-columns:  auto;
 	grid-template-areas:
 		"header header"
-		"sidebar main"
+		"sidebar sidebar"
+		"main main"
 		"footer footer";
+	
+
 }
 .site__header, .site__sidebar, .site__main, .site__footer {
      padding : 1vh 3vw;
@@ -38,5 +43,16 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 
     background-color:  lighten($color__background-zonegrid, 20%);
 }
+
+@media screen and (min-width:700px) {
+	.site {
+	grid-template-columns: ($size__site-sidebar) auto;
+	grid-template-areas:
+		"header header"
+		"sidebar main"
+		"footer footer";
+	}	
+}
+
 
 /* @import "no-sidebar"; */
