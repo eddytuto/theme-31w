@@ -1,4 +1,5 @@
 <?php get_header(); ?> 
+<section class="site__main">
 <h1>single.php Mon premier modèle Wordpress</h1>
 <?php
 if (have_posts()):
@@ -20,5 +21,5 @@ if (have_posts()):
 
     <?php endwhile; ?>
 <?php endif; ?>    
-
+</section>
 <?php get_footer(); ?>
