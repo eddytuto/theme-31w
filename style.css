@@ -480,6 +480,7 @@ table {
 --------------------------------------------- */
 a {
   color: #4169e1;
+  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 a:visited {
@@ -585,6 +586,30 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Composante
+--------------------------------------------------------------*/
+.menu__sidebar__ul {
+  list-style-type: none;
+  margin: 0;
+  padding: .4rem 0;
+}
+
+.menu__sidebar__ul .menu-item {
+  margin: .5rem 0;
+}
+
+.menu__sidebar__ul .menu-item a {
+  padding: .5rem;
+  line-height: 1.5rem;
+}
+
+.menu__sidebar__ul .menu-item a:hover {
+  background-color: #a4dbe9;
+}
+
+/*--------------------------------------------------------------
+
+/*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 /*
@@ -594,7 +619,7 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
+  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer {
@@ -624,11 +649,10 @@ https://css-tricks.com/snippets/css/complete-guide-grid/
 }
 
 @media screen and (min-width: 700px) {
-.site {
-      grid-template-columns: 20vw auto;
-      grid-template-areas: "header header" "sidebar main" "footer footer";
-}
-
+  .site {
+    grid-template-columns: 30vw auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }
 
 /* @import "no-sidebar"; */
